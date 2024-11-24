@@ -1,5 +1,5 @@
 // menu.js
-import restaurant from "./restaurant.jpg"
+import restaurant from "./kong_kitchen_background.jpg"
 export function menuPage(){
     const content = document.createElement("p");
     content.innerText = "Please have a look at our menu";

@@ -1,5 +1,68 @@
 /* styles.css */
-body {
+  body {
     background-color: white;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    height: 100%;
+    position: relative;
+    z-index: 1;
   }
-  
+  body:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(restaurant_background.png) center center;
+    opacity: .8;
+    background-size: 100% 100%;
+  }
+
+  .navbar{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+  }
+  button{
+    height: 60px;
+    width: 200px;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+  button:hover{
+    background-color: rgb(241, 194, 107);
+    color: white;
+    transform: scale(1.1);
+    
+  }
+
+  #content{
+    height: 500px;
+  }
+
+
+  #text_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color:rgb(255, 255, 255) ;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+
+  }
+  p{
+    font-size: 30px;
+    font-weight: bold;
+    
+  }
+
