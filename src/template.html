@@ -6,14 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Your Page Title</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
 
-    <header class="navbar">
-        <button id="homeTab">Home</button>
-        <button id="menuTab">Menu</button>
-        <button id="aboutTab">About</button>
-    </header>
+<body style="height:1500px">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" >
+      <div id="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a id="Kong_Fu_Logo" class="navbar-brand">Kong Fu Kitchen</a>
+          </div>
+        </div>
+        
+        <div>
+          <ul class="nav navbar-nav" id="button_nav">
+            <li><a href="#"><button id="homeTab">Home</button></a></li>
+            <li><a href="#"><button id="menuTab">Menu</button></a></li>
+            <li><a href="#"><button id="aboutTab">About</button></li>
+          </ul>
+        </div>
+      </div>
+        
+    </nav>
+        
 
     <div id="content">
         <div id="text_content">

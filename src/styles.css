@@ -18,21 +18,41 @@
     background: url(restaurant_background.png) center center;
     opacity: .8;
     background-size: 100% 100%;
+    background-attachment: fixed;
   }
 
-  .navbar{
-    
+  #navbar{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+
+  #button_nav{
+    opacity: 0.8;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 150px;
+  
+  }
+  #button_nav:hover{
+    opacity: 0.8;
+  }
+  .container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Kong_Fu_Logo{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(78, 78, 221);
+    
   }
   button{
     height: 60px;
     width: 200px;
-    background-color: orange;
+    background-color: whitesmoke;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
     color: black;
@@ -40,8 +60,7 @@
   button:hover{
     background-color: rgb(241, 194, 107);
     color: white;
-    transform: scale(1.1);
-    
+    transform: scale(1.1); 
   }
 
   #content{

@@ -15,7 +15,7 @@ export function homePage(){
     
 
     const content = document.createElement("p");
-    content.innerText = "Welcome to Our Local Cambodian Restaurant town";
+    content.innerText = "Welcome to KongFu Kitchen";
     document.getElementById("text_content").appendChild(content);
 
 
