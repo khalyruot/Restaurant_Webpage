@@ -73,10 +73,10 @@
   }
 
   #content{
-    height: 500px;
+    height: 400px;
     display: flex;
     justify-content: center;
-    padding-bottom: 500px;
+    padding-bottom: 200px;
     
   }
 
@@ -129,8 +129,22 @@
   #div_point{
     display: flex;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     background-color: beige;
   }
+  #point_1{
+    width: 400px;
+    margin: 20px;
+    box-shadow: 1px 0px #e6d8d8;
+  }
 
+  #point_2{
+    width: 400px;
+    margin: 20px;
+    box-shadow: 1px 0px #e6d8d8;
+  }
+  #point_3{
+    width: 400px;
+    margin: 20px;
+  }
