@@ -8,11 +8,12 @@ import "./styles.css";
 homePage();
 
 function clearContent(){
-    const contentDiv = document.querySelector('#content');
-    contentDiv.innerHTML = '';
+    const contentDiv = document.getElementById("text_content");
+    contentDiv.innerText = "";
 }
 
 document.getElementById("homeTab").onclick = function() {
+    console.log("A");
     clearContent();
     homePage();
 }

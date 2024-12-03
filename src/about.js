@@ -3,7 +3,7 @@ export function aboutPage(){
 
     const content = document.createElement("p");
     content.innerText = "Please search the contact below";
-    document.getElementById("content").appendChild(content);
+    document.getElementById("text_content").appendChild(content);
 
 
     let myArrayFooter = ["Khaly: 0967518934", "Tom: 097451321", "Dave: 0967321721"];
@@ -13,7 +13,7 @@ export function aboutPage(){
         var listArray = document.createElement("li");
         const textToBeAdded = document.createTextNode(myArrayFooter[i]);
         listArray.appendChild(textToBeAdded);
-        document.getElementById("content").appendChild(listArray);
+        document.getElementById("text_content").appendChild(listArray);
     }
     
 

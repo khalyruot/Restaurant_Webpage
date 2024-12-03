@@ -1,5 +1,6 @@
 /* styles.css */
   body {
+   
     background-color: white;
     display: grid;
     grid-template-rows: 0.5fr 2fr 0.5fr;
@@ -97,11 +98,12 @@
   }
 
   #text_content p { 
+    
     margin: 0px; 
     white-space: nowrap; 
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0); 
     animation:  
-    typing 4s steps(22, end) forwards, blink 1s infinite; 
+    typing 4s steps(22, end) forwards, blink 1s 5s; 
   } 
 
   @keyframes typing { 
