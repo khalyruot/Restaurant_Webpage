@@ -27,6 +27,7 @@
     grid-template-columns: 4fr 1fr;
     height: 90px;
     opacity: 1;
+    background-color: #d8e6e6;
   }
 
   #button_nav{
@@ -45,10 +46,14 @@
     align-items: center;
   }
   #Kong_Fu_Logo{
-    font-weight: bold;
-    font-size: 30px;
-    color: rgb(78, 78, 221);
-    
+    background: url(kong_fo_log.jpg);
+    height: 80px;
+    width: 300px;
+    /* extended code */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
   }
   #content_homepage{
     background-color: aliceblue;
