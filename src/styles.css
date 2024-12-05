@@ -1,5 +1,5 @@
 /* styles.css */
-  body {
+  #movable_background {
    
     background-color: white;
     display: grid;
@@ -8,7 +8,7 @@
     position: relative;
     z-index: 1;
   }
-  body:before{
+  #movable_background:before{
     content: "";
     position: absolute;
     z-index: -1;
@@ -138,24 +138,89 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: flex-start;
-    background-color: beige;
+    background-color: #d8e6e6;;
   }
   #point_1{
     width: 400px;
+    height: 250px;
     margin: 20px;
-    box-shadow: 1px 0px #e6d8d8;
+    background-color: white;
+ 
   }
 
   #point_2{
     width: 400px;
+    height: 250px;
     margin: 20px;
-    box-shadow: 1px 0px #e6d8d8;
+    background-color: white;
+    
   }
   #point_3{
     width: 400px;
+    height: 250px;
     margin: 20px;
+    background-color: white;
   }
 
   .no-scroll {
     overflow: hidden;
+  }
+  h1{
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+    padding-top: 10px;
+  }
+  h2{
+    font-family: sans-serif;
+    font-size: small;
+    margin: 10px;
+  }
+
+  #Kong_Fu_Friendly{
+    background: url(Friendly.jpg);
+    height: 210px;
+    width: 380px;
+    margin: 10px;
+    /* extended code */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+  }
+
+  #Kong_Fu_Delicious{
+    background: url(Delicious.jpg);
+    height: 210px;
+    width: 380px;
+    margin: 10px;
+    
+    /* extended code */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+  }
+  #Kong_Fu_Reasonable{
+    background: url(Price.jpg);
+    height: 210px;
+    width: 380px;
+    margin: 10px;
+    /* extended code */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+  }
+  #point{
+    background-color: white;
+
+    border-radius: 5px;
+    height: 40px;
+ 
+  }
+  #buttom_part_home{
+    height: 500px;
+    background-color: #d8e6e6;
   }
