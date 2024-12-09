@@ -1,6 +1,5 @@
 /* styles.css */
   #movable_background {
-   
     background-color: white;
     display: grid;
     grid-template-rows: 0.5fr 2fr 0.5fr;
@@ -73,7 +72,7 @@
     color: black;
   }
   button:hover{
-    background-color: rgb(241, 194, 107);
+    background-color: #0443f1;
     color: white;
     transform: scale(1.1); 
   }
@@ -225,11 +224,7 @@
     height: 40px;
  
   }
-  #buttom_part_home{
-    height: 500px;
-    background-color: #d8e6e6;
-  }
-
+ 
   #face_1{
     background: url(face_1.jpg);
     height: 40vh;
@@ -241,9 +236,22 @@
     background-position: right center;;
     border-radius: 50%;
   }
+  #face_2{
+    background: url(family_gathering.jpg);
+    height: 40vh;
+    width: 40vh;
+    margin: 10px;
+    /* extended code */
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-position: right center;;
+    border-radius: 50%;
+  }
   #buttom_part_home{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 800px;
+    background-color: #d8e6e6;
   }
 
   #proof_bottom{
@@ -252,10 +260,9 @@
     justify-content: center;
     align-items: center;
     padding-top: 5px;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left: 30px;
     padding-left: 100px;
-    background-color: white;
     width: 1280px;
     border-radius: 20px;
    
@@ -264,4 +271,37 @@
   #face_letter{
     width: 800px;
     padding-left: 100px;
+  }
+
+  #bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #d8e6e6;;
+  }
+  #bottom_box{
+    background-color: white;
+    width: 1300px;
+    height: 250px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  #bottom_left{
+    padding: 20px;
+  }
+
+  #social_media_2{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 100px;
+    background-color: #c3ceee;
+    height: 250px;
   }
