@@ -1,30 +1,10 @@
 /* styles.css */
-  #movable_background {
-    background-color: white;
-    display: grid;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-  }
-  #movable_background:before{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(kong_kitchen_background.jpg) center center;
-    opacity: 1;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-  }
+  
 
   #navbar{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    height: 90px;
+    height: 100px;
     opacity: 1;
     background-color: #d8e6e6;
   }
@@ -54,13 +34,7 @@
     background-position: center center;
     border-radius: 10px;
   }
-  #content_homepage{
-    background-color: aliceblue;
-    color: black;
-    font-style: italic;
-    outline: none;
-   
-  }
+ 
   button{
     height: 60px;
     width: 200px;
@@ -77,12 +51,34 @@
     transform: scale(1.1); 
   }
 
-  #content{
-    height: 400px;
+  #movable_background {
+    background-color: white;
+    height: 800px;
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
-    padding-bottom: 200px;
-    
+    align-items: center;
+  }
+  #movable_background:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(kong_kitchen_background.jpg) center center;
+    opacity: 1;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+
+  #content{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 
@@ -250,7 +246,7 @@
   #buttom_part_home{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    height: 800px;
+    height: 1200px;
     background-color: #d8e6e6;
   }
 
@@ -278,8 +274,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    background-color: #d8e6e6;;
+    height: 500px;
+    background-color: #d8e6e6;
+    padding-top: 150px;
   }
   #bottom_box{
     background-color: white;
@@ -304,4 +301,17 @@
     gap: 100px;
     background-color: #c3ceee;
     height: 250px;
+  }
+
+  #menuPage{
+    padding-top: 100px;
+    background-color: gray;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  #food{
+    height: 50px;
+    gap: 20px;
   }

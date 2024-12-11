@@ -5,25 +5,38 @@ import { aboutPage } from "./about.js";
 
 import "./styles.css";
 
-homePage();
 
-function clearContent(){
-    const contentDiv = document.getElementById("text_content");
-    contentDiv.innerText = "";
-}
+const homeBtn = document.getElementById("homeTab");
+const menuBtn = document.getElementById("menuTab");
+const aboutBtn = document.getElementById("aboutTab");
+   
+const homeSection = document.getElementById("homePage");
+const menuSection = document.getElementById("menuPage");
+const aboutSection = document.getElementById("aboutPage");
 
-document.getElementById("homeTab").onclick = function() {
-    console.log("A");
-    clearContent();
-    homePage();
+
+hideAllSections();
+homeSection.style.display = "block";
+
+
+function hideAllSections() {
+    homeSection.style.display = "none";
+    menuSection.style.display = "none";
+    aboutSection.style.display = "none";
 }
-document.getElementById("menuTab").onclick = function() {
-    clearContent();
-    menuPage();
-}
-document.getElementById("aboutTab").onclick = function() {
-    clearContent();
-    aboutPage();
-}
+homeBtn.addEventListener("click", function() {
+    hideAllSections();
+    homeSection.style.display = "block";
+});
+
+menuBtn.addEventListener("click", function() {
+    hideAllSections();
+    menuSection.style.display = "block";
+});
+
+aboutBtn.addEventListener("click", function() {
+    hideAllSections();
+    aboutSection.style.display = "block";
+});
 
 
