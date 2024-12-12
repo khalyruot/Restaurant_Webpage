@@ -30,13 +30,18 @@ homeBtn.addEventListener("click", function() {
 });
 
 menuBtn.addEventListener("click", function() {
+    
     hideAllSections();
-    menuSection.style.display = "block";
+    menuSection.innerText = "";
+    menuPage(); 
 });
 
 aboutBtn.addEventListener("click", function() {
     hideAllSections();
     aboutSection.style.display = "block";
+    aboutSection.style.display = "flex";
+    aboutPage();
+    
 });
 
 

@@ -178,6 +178,23 @@
     margin: 5px;
   }
 
+  h4{
+    font-family: sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  h5{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 5px;
+  }
+  h6{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 5px;
+  }
+
   #Kong_Fu_Friendly{
     background: url(Friendly.jpg);
     height: 210px;
@@ -290,8 +307,11 @@
    
   }
   #bottom_left{
-    padding: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    
   }
+  
 
   #social_media_2{
     font-size: 50px;
@@ -303,15 +323,250 @@
     height: 250px;
   }
 
+  
+  /*Menu Section*/
+
   #menuPage{
+    background-color: #d8e6e6;
     padding-top: 100px;
-    background-color: gray;
-    height: 1500px;
-    display: flex;
-    flex-direction: column;
+    height: 1800px;
+  }
+
+  div #menu-section{
+    display: grid;
+    grid-template-rows: 0.5fr 4fr;
+    padding: 3vh 3vw;
+    justify-content: center;
+  }
+
+  div#menu-title {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 2rem;
    
   }
-  #food{
-    height: 50px;
-    gap: 20px;
+
+  div#menu-title h3{
+    color: #FB410D;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  div#menu-list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 80vw;
+    height: 80vw;
+  }
+
+  div.dish{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: white;
+    align-items: center;
+    padding: 5rem;
+    margin: 5rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+  }
+
+  div.dish img{
+    width: 10vw;
+    padding-right: 1rem;
+  }
+
+  div.dish h4{
+    font-size: 1.25rem;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  div.dish h5{
+    font-size: 1.25rem;
+    color: #FB410D;
+    margin: 0px;
+    justify-self: center;
+  }
+  div.dish p{
+    margin: 0px;
+    font-size: 0.9rem;
+    color: gray;
+    padding-top: 1vh;
+  }
+
+  div #dish-details{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+  }
+
+
+  /*About Style*/
+  #aboutPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+  }
+  #item_location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+  }
+  #our_location{
+    padding-bottom: 5px;
+  }
+  #location_1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: solid 1px #0443f1 ;
+   transition: transform .2s; /* Animation */
+   height: 350px;
+   opacity: 0.8;
+   background-color: #afeceee3;
+   border-radius: 20px;
+  }
+  #location_1:hover{
+    transform: scale(1.01);
+    opacity: 1;
+    background-color: #ffffffe3;
+  }
+  #Kong_Fu_Vensreng{
+    height: 48vh;
+    width: 48vh;
+    margin: 5px;
+    background: url(Kong_Fo_Veng_Sreng.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    
+  }
+  #point_about{
+    padding: 5px;
+ 
+  }
+  #left_arrow{
+    height: 8vh;
+    width: 8vh;
+    margin: 20px;
+    background: url(left.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: transform .2s; /* Animation */
+    opacity: 0.6;
+  }
+  #left_arrow:hover{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  #right_arrow{
+    height: 8vh;
+    width: 8vh;
+    margin: 20px;
+    background: url(right.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: transform .2s; /* Animation */
+    opacity: 0.6;
+  }
+
+  #right_arrow:hover{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  #location_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #0443f1 ;
+    transition: transform .2s; /* Animation */
+    height: 350px;
+    opacity: 0.8;
+    background-color: #afeceee3;
+    border-radius: 20px;
+   }
+
+   #location_2:hover{
+    transform: scale(1.01);
+    opacity: 1;
+    background-color: #ffffffe3;
+  }
+
+  #Kong_Fu_Midtown{
+    height: 48vh;
+    width: 48vh;
+    margin: 5px;
+    background: url(Kong_Fo_Midtown.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    
+  }
+
+  #location_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #0443f1 ;
+    transition: transform .2s; /* Animation */
+    height: 350px;
+    opacity: 0.8;
+    background-color: #afeceee3;
+    border-radius: 20px;
+   }
+
+   #location_3:hover{
+    transform: scale(1.01);
+    opacity: 1;
+    background-color: #ffffffe3;
+  }
+
+  #Kong_Fu_Malin_Office{
+    height: 48vh;
+    width: 48vh;
+    margin: 5px;
+    background: url(Kong_Fo_Maline_Office.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    
+  }
+
+  
+  #location_4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #0443f1 ;
+    transition: transform .2s; /* Animation */
+    height: 350px;
+    opacity: 0.8;
+    background-color: #afeceee3;
+    border-radius: 20px;
+   }
+
+   #location_4:hover{
+    transform: scale(1.01);
+    opacity: 1;
+    background-color: #ffffffe3;
+  }
+
+  #Kong_Fu_Kmall{
+    height: 48vh;
+    width: 48vh;
+    margin: 5px;
+    background: url(Kong_Fo_Kmall.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    
   }

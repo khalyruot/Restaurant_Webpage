@@ -1,22 +1,56 @@
-// about.js
+const left_arrow = document.getElementById("left_arrow");
+const right_arrow = document.getElementById("right_arrow");
+const location_1 = document.getElementById("location_1");
+const location_2 = document.getElementById("location_2");
+const location_3 = document.getElementById("location_3");
+const location_4 = document.getElementById("location_4");
+
 export function aboutPage(){
+    location_2.style.display = "none";
+    location_3.style.display = "none";
+    location_4.style.display = "none";
+    left_arrow.style.display = "block";
+    right_arrow.style.display = "block";
+    let location = location_1;
+    location.style.display = "block";
+    let a = 0;
 
-    console.log("about");
+    function changeImage(location){
+        location.style.display = "block";
+    }
 
-    const content = document.createElement("p");
-    content.innerText = "Please search the contact below";
-    document.getElementById("contactPage").appendChild(content);
+    left_arrow.onclick = function(){
+        a -= 1;
+        location.style.display = "none";
+        const location_1 = document.getElementById("location_1");
+        const location_2 = document.getElementById("location_2");
+        const location_3 = document.getElementById("location_3");
+        const location_4 = document.getElementById("location_4");
+        let location_total = [location_1, location_2, location_3, location_4];
+        let i =  Math.abs(a%4);
+        location = location_total[i];
 
+        setInterval(function() {
+            changeImage(location);
+          },100);
 
-    /*let myArrayFooter = ["Khaly: 0967518934", "Tom: 097451321", "Dave: 0967321721"];
-    
-    //create textnode
-    for(let i = 0; i < myArrayFooter.length; i++){
-        var listArray = document.createElement("li");
-        const textToBeAdded = document.createTextNode(myArrayFooter[i]);
-        listArray.appendChild(textToBeAdded);
-        document.getElementById("text_content").appendChild(listArray);
-    }*/
-    
+    }
+
+    right_arrow.onclick = function(){
+        a += 1;
+        location.style.display = "none";
+        const location_1 = document.getElementById("location_1");
+        const location_2 = document.getElementById("location_2");
+        const location_3 = document.getElementById("location_3");
+        const location_4 = document.getElementById("location_4");
+        let location_total = [location_1, location_2, location_3, location_4];
+        let i =  Math.abs(a%4);
+        location = location_total[i];
+        setInterval(function() {
+            changeImage(location);
+          },100);
+    }
+
+   
 
 }
