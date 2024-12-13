@@ -418,33 +418,7 @@
   #our_location{
     padding-bottom: 5px;
   }
-  #location_1{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   border: solid 1px #0443f1 ;
-   transition: transform .2s; /* Animation */
-   height: 350px;
-   opacity: 0.8;
-   background-color: #afeceee3;
-   border-radius: 20px;
-  }
-  #location_1:hover{
-    transform: scale(1.01);
-    opacity: 1;
-    background-color: #ffffffe3;
-  }
-  #Kong_Fu_Vensreng{
-    height: 48vh;
-    width: 48vh;
-    margin: 5px;
-    background: url(Kong_Fo_Veng_Sreng.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    
-  }
+ 
   #point_about{
     padding: 5px;
  
@@ -480,6 +454,39 @@
     transform: scale(1.2);
   }
 
+  #location_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 5fr 1fr;
+    border: solid 1px #0443f1 ;
+    transition: transform .2s; /* Animation */
+    height: 350px;
+    width: 400px;
+    opacity: 0.8;
+    background-color: #afeceee3;
+    border-radius: 20px;
+   }
+
+   #location_1:hover{
+    transform: scale(1.01);
+    opacity: 1;
+    background-color: #ffffffe3;
+  }
+
+  #Kong_Fu_Vensreng{
+    height: 250px;
+    width: 250px;
+    margin: 5px;
+    background: url(Kong_Fo_Veng_Sreng.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    
+  }
+
+
   #location_2{
     display: flex;
     flex-direction: column;
@@ -500,8 +507,8 @@
   }
 
   #Kong_Fu_Midtown{
-    height: 48vh;
-    width: 48vh;
+    height: 250px;
+    width: 250px;
     margin: 5px;
     background: url(Kong_Fo_Midtown.jpg);
     background-size: 100%;
@@ -530,8 +537,8 @@
   }
 
   #Kong_Fu_Malin_Office{
-    height: 48vh;
-    width: 48vh;
+    height: 250px;
+    width: 250px;
     margin: 5px;
     background: url(Kong_Fo_Maline_Office.jpg);
     background-size: 100%;
@@ -561,8 +568,8 @@
   }
 
   #Kong_Fu_Kmall{
-    height: 48vh;
-    width: 48vh;
+    height: 250px;
+    width: 250px;
     margin: 5px;
     background: url(Kong_Fo_Kmall.jpeg);
     background-size: 100%;

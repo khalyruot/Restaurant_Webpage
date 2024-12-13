@@ -37,9 +37,21 @@ menuBtn.addEventListener("click", function() {
 });
 
 aboutBtn.addEventListener("click", function() {
+
     hideAllSections();
-    aboutSection.style.display = "block";
+
     aboutSection.style.display = "flex";
+
+    const location_1 = document.getElementById("location_1");
+    const location_2 = document.getElementById("location_2");
+    const location_3 = document.getElementById("location_3");
+    const location_4 = document.getElementById("location_4");
+
+    location_1.style.display = "none";
+    location_2.style.display = "none";
+    location_3.style.display = "none";
+    location_4.style.display = "none";
+
     aboutPage();
     
 });
