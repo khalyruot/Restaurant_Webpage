@@ -1,5 +1,7 @@
 // menu.js
 import restaurant from "./kong_kitchen_background.jpg"
+import crispy_chicken from "./crispy_chicken.png"
+import kong_pao_chicken from "./kong_pao_chicken.jpg"
 
 
 
@@ -35,18 +37,19 @@ export function menuPage(){
     //Creating product image div
     const pizza1Image = document.createElement('div');
     const image1 = document.createElement('img');
-    image1.src = "https://22271054.fs1.hubspotusercontent-na1.net/hub/22271054/hubfs/menu-item-1-1.png?width=200&height=200&name=menu-item-1-1.png";
+    image1.src = crispy_chicken;
     image1.alt = 'hubspot pizza';
+    image1.setAttribute("id","image_food");
     pizza1Image.append(image1);
     //Creating and adding pizza details
     const pizza1details = document.createElement('div');
     pizza1details.id = 'dish-details';
     const pizza1name = document.createElement('h3');
-    pizza1name.textContent = 'Lemon & Garlic Green Beans'
+    pizza1name.textContent = 'Crispy Chicken'
     const pizza1price = document.createElement('h3');
-    pizza1price.textContent = '$15';
+    pizza1price.textContent = '$5';
     const pizza1ingredients = document.createElement('h6');
-    pizza1ingredients.textContent = 'Asparagus, hens egg, toasted sunflower seeds, cheese, Spenwood cheese';
+    pizza1ingredients.textContent = 'Our signature dish. Crispy chicken wok-tossed in a sweet and spicy orange sauce.';
     pizza1details.append(pizza1name,pizza1price,pizza1ingredients);
     pizza1.append(pizza1Image,pizza1details);
 
@@ -59,18 +62,19 @@ export function menuPage(){
     //Creating product image div
     const pizza2Image = document.createElement('div');
     const image2 = document.createElement('img');
-    image2.src = "https://22271054.fs1.hubspotusercontent-na1.net/hub/22271054/hubfs/menu-item-1-1.png?width=200&height=200&name=menu-item-1-1.png";
+    image2.src = kong_pao_chicken;
     image2.alt = 'hubspot pizza';
+    image2.setAttribute("id","image_food");
     pizza2Image.append(image2);
     //Creating and adding pizza details
     const pizza2details = document.createElement('div');
     pizza2details.id = 'dish-details';
     const pizza2name = document.createElement('h3');
-    pizza2name.textContent = 'Lemon & Garlic Green Beans'
+    pizza2name.textContent = 'KUNG PAO CHICKEN'
     const pizza2price = document.createElement('h3');
-    pizza2price.textContent = '$15';
+    pizza2price.textContent = '$5';
     const pizza2ingredients = document.createElement('h6');
-    pizza2ingredients.textContent = 'Asparagus, hens egg, toasted sunflower seeds, cheese, Spenwood cheese';
+    pizza2ingredients.textContent = 'A Szechwan-inspired dish with chicken, peanuts and vegetables, finished with chili peppers.';
     pizza2details.append(pizza2name,pizza2price,pizza2ingredients);
     pizza2.append(pizza2Image,pizza2details);
 
