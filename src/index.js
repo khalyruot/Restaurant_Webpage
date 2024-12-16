@@ -47,11 +47,15 @@ aboutBtn.addEventListener("click", function() {
     const location_3 = document.getElementById("location_3");
     const location_4 = document.getElementById("location_4");
 
-    location_4.style.display = "none";
-    location_2.style.display = "none";
-    location_3.style.display = "none";
+
     location_1.style.display = "block";
     location_1.style.display = "flex";
+    location_2.style.display = "block";
+    location_2.style.display = "flex";
+    location_3.style.display = "none";
+    location_4.style.display = "none";
+    
+  
 
     aboutPage();
     

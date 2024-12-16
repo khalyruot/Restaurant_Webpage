@@ -29,22 +29,18 @@ export function aboutPage(){
         location_2.style.display = "none";
         location_3.style.display = "none";
         location_4.style.display = "none";
-
-        console.log(a);
        
-
-        
 
         let location_total = [location_1, location_2, location_3, location_4];
         let i =  Math.abs(a%4);
+        let i_plus_1 = Math.abs((a+1)%4);
         location = location_total[i];
 
-        /*setInterval(function() {
-            changeImage(location);
-          },0);*/
+        location_total[i].style.display = "block";
+        location_total[i].style.display = "flex";
 
-        location.style.display = "block";
-        location.style.display = "flex";
+        location_total[i_plus_1].style.display = "block";
+        location_total[i_plus_1].style.display = "flex";
         
 
     
@@ -69,11 +65,15 @@ export function aboutPage(){
 
         let location_total = [location_1, location_2, location_3, location_4];
         let i =  Math.abs(a%4);
+        let i_plus_1 = Math.abs((a+1)%4);
         location = location_total[i];
 
         
-        location.style.display = "block";
-        location.style.display = "flex";
+        location_total[i].style.display = "block";
+        location_total[i].style.display = "flex";
+
+        location_total[i_plus_1].style.display = "block";
+        location_total[i_plus_1].style.display = "flex";
     }
    
 
