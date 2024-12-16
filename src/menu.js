@@ -1,7 +1,10 @@
 // menu.js
 import restaurant from "./kong_kitchen_background.jpg"
-import crispy_chicken from "./crispy_chicken.png"
-import kong_pao_chicken from "./kong_pao_chicken.jpg"
+import crispy_chicken from "./orange_chicken.jpg"
+import kong_pao_chicken from "./Kung_Pao_Chicken.jpg"
+import magnolia_pork from "./magnolia_pork.jpg"
+import honey_shrimp from "./honey_shrimp.jpg"
+import teriyaki_chicken from "./teriyaki_chicken.jpg"
 
 
 
@@ -87,18 +90,19 @@ export function menuPage(){
     //Creating product image div
     const pizza3Image = document.createElement('div');
     const image3 = document.createElement('img');
-    image3.src = "https://22271054.fs1.hubspotusercontent-na1.net/hub/22271054/hubfs/menu-item-1-1.png?width=200&height=200&name=menu-item-1-1.png";
-    image3.alt = 'hubspot pizza';
+    image3.src = magnolia_pork;
+    image3.alt = 'magnolia_pork';
+    image3.setAttribute("id","image_food");
     pizza3Image.append(image3);
     //Creating and adding pizza details
     const pizza3details = document.createElement('div');
     pizza3details.id = 'dish-details';
     const pizza3name = document.createElement('h3');
-    pizza3name.textContent = 'Lemon & Garlic Green Beans'
+    pizza3name.textContent = 'Magnolia Pork'
     const pizza3price = document.createElement('h3');
-    pizza3price.textContent = '$15';
+    pizza3price.textContent = '$8';
     const pizza3ingredients = document.createElement('h6');
-    pizza3ingredients.textContent = 'Asparagus, hens egg, toasted sunflower seeds, cheese, Spenwood cheese';
+    pizza3ingredients.textContent = 'Stir-fried pork marinated in our original sauce with fresh mushrooms, paprika, onions, and green onions, and finished with a flavorful garlic sauce.';
     pizza3details.append(pizza3name,pizza3price,pizza3ingredients);
     pizza3.append(pizza3Image,pizza3details);
 
@@ -111,18 +115,19 @@ export function menuPage(){
     //Creating product image div
     const pizza4Image = document.createElement('div');
     const image4 = document.createElement('img');
-    image4.src = "https://22271054.fs1.hubspotusercontent-na1.net/hub/22271054/hubfs/menu-item-1-1.png?width=200&height=200&name=menu-item-1-1.png";
-    image4.alt = 'hubspot pizza';
+    image4.src = honey_shrimp;
+    image4.alt = 'honey_shrimp';
+    image4.setAttribute("id","image_food");
     pizza4Image.append(image4);
     //Creating and adding pizza details
     const pizza4details = document.createElement('div');
     pizza4details.id = 'dish-details';
     const pizza4name = document.createElement('h3');
-    pizza4name.textContent = 'Lemon & Garlic Green Beans'
+    pizza4name.textContent = 'Honey Walnut Shrimp'
     const pizza4price = document.createElement('h3');
-    pizza4price.textContent = '$15';
+    pizza4price.textContent = '$8';
     const pizza4ingredients = document.createElement('h6');
-    pizza4ingredients.textContent = 'Asparagus, hens egg, toasted sunflower seeds, cheese, Spenwood cheese';
+    pizza4ingredients.textContent = 'Fresh wok-fried tempura shrimp bathed in honey sauce with glazed walnuts.';
     pizza4details.append(pizza4name,pizza4price,pizza4ingredients);
     pizza4.append(pizza4Image,pizza4details);
 
@@ -136,18 +141,19 @@ export function menuPage(){
     //Creating product image div
     const pizza5Image = document.createElement('div');
     const image5 = document.createElement('img');
-    image5.src = "https://22271054.fs1.hubspotusercontent-na1.net/hub/22271054/hubfs/menu-item-1-1.png?width=200&height=200&name=menu-item-1-1.png";
-    image5.alt = 'hubspot pizza';
+    image5.src = teriyaki_chicken;
+    image5.alt = 'teriyaki_chicken';
+    image5.setAttribute("id","image_food");
     pizza5Image.append(image5);
     //Creating and adding pizza details
     const pizza5details = document.createElement('div');
     pizza5details.id = 'dish-details';
     const pizza5name = document.createElement('h3');
-    pizza5name.textContent = 'Lemon & Garlic Green Beans'
+    pizza5name.textContent = 'GRILLED TERIYAKI CHICKEN'
     const pizza5price = document.createElement('h3');
-    pizza5price.textContent = '$15';
+    pizza5price.textContent = '$8';
     const pizza5ingredients = document.createElement('h6');
-    pizza5ingredients.textContent = 'Asparagus, hens egg, toasted sunflower seeds, cheese, Spenwood cheese';
+    pizza5ingredients.textContent = 'Grilled chicken hand-sliced to order and served with teriyaki sauce.';
     pizza5details.append(pizza5name,pizza5price,pizza5ingredients);
     pizza5.append(pizza5Image,pizza5details);
 
