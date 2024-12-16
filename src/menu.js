@@ -9,6 +9,7 @@ import teriyaki_chicken from "./teriyaki_chicken.jpg"
 
 
 export function menuPage(){
+    
     const menuPart = document.getElementById("menuPage");
 
     menuPart.style.display = "block";
