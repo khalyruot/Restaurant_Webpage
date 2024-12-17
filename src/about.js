@@ -32,8 +32,10 @@ export function aboutPage(){
        
 
         let location_total = [location_1, location_2, location_3, location_4];
-        let i =  Math.abs(a%4);
-        let i_plus_1 = Math.abs((a+1)%4);
+
+        let i = 0;
+        let i_plus_1 = 1;
+      
         location = location_total[i];
 
         location_total[i].style.display = "block";
@@ -41,6 +43,9 @@ export function aboutPage(){
 
         location_total[i_plus_1].style.display = "block";
         location_total[i_plus_1].style.display = "flex";
+
+        i =  Math.abs(a%4);
+        i_plus_1 = Math.abs((a+1)%4);
         
 
     
