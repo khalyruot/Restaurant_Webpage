@@ -15,6 +15,8 @@ export function aboutPage(){
     let location = location_1;
   
     let a = 0;
+    let i = 0;
+    let i_plus_1 = 1;
 
     left_arrow.onclick = function(){
 
@@ -33,8 +35,7 @@ export function aboutPage(){
 
         let location_total = [location_1, location_2, location_3, location_4];
 
-        let i = 0;
-        let i_plus_1 = 1;
+        
       
         location = location_total[i];
 
