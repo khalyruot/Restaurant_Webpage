@@ -36,8 +36,11 @@ export function aboutPage(){
         let location_total = [location_1, location_2, location_3, location_4];
 
         
-      
-        location = location_total[i];
+        i =  Math.abs(a%4);
+        i_plus_1 = Math.abs((i+1)%4);
+
+        console.log("i: " + i);
+        console.log("i_plus_1" + i_plus_1);
 
         location_total[i].style.display = "block";
         location_total[i].style.display = "flex";
@@ -45,8 +48,9 @@ export function aboutPage(){
         location_total[i_plus_1].style.display = "block";
         location_total[i_plus_1].style.display = "flex";
 
-        i =  Math.abs(a%4);
-        i_plus_1 = Math.abs((i+1)%4);
+        console.log(location_total[i]);
+        console.log(location_total[i_plus_1]);
+
         
 
     
@@ -72,7 +76,10 @@ export function aboutPage(){
         let location_total = [location_1, location_2, location_3, location_4];
         let i =  Math.abs(a%4);
         let i_plus_1 = Math.abs((i+1)%4);
-        location = location_total[i];
+
+        console.log("i: " + i);
+        console.log("i_plus_1: " + i_plus_1);
+
 
         
         location_total[i].style.display = "block";
@@ -80,6 +87,9 @@ export function aboutPage(){
 
         location_total[i_plus_1].style.display = "block";
         location_total[i_plus_1].style.display = "flex";
+
+        console.log(location_total[i]);
+        console.log(location_total[i_plus_1]);
     }
    
 
