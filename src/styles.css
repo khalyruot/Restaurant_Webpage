@@ -1,14 +1,637 @@
 /* styles.css */
 
+#navbar{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  padding-right: 40px;
+  opacity: 1;
+  background-color: #d8e6e6;
+}
+
+.container-fluid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#button_nav{
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+#button_nav:hover{
+  opacity: 0.8;
+}
+.container-fluid{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#Kong_Fu_Logo{
+  background: url(kong_fo_log.jpg);
+  height: 80px;
+  width: 300px;
+  /* extended code */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+}
+
+button{
+  height: 60px;
+  width: 200px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+button:hover{
+  background-color: #0443f1;
+  color: white;
+  transform: scale(1.1); 
+}
+
+#homePage{
+  width: 1600px;
+  background-color: #c3ceee;
+}
+
+#movable_background {
+  background-color: white;
+  height: 800px;
+  width: 1600px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#movable_background:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(kong_kitchen_background.jpg) center center;
+  opacity: 1;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+#content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1500px;
+}
+
+
+#text_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px; 
+  background: #f5f5f5; 
+  font-size: 35px; 
+  font-family: monospace; 
+  border-radius: 50px; 
+  overflow: hidden; 
+  position: relative; 
+ 
+
+}
+
+#text_content p { 
+  
+  margin: 0px; 
+  white-space: nowrap; 
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0); 
+  animation:  
+  typing 2s steps(22, end) forwards, blink 1s 5s; 
+ 
+} 
+
+@keyframes typing { 
+    0% { 
+        width: 0% 
+    } 
+
+    100% { 
+        width: 100% 
+    } 
+} 
+
+@keyframes blink { 
+
+    0%, 
+    100% { 
+        border-right: 2px solid transparent; 
+    } 
+
+    50% { 
+        border-right: 2px solid #222; 
+    } 
+} 
+
+#div_point{
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8e6e6;
+  width: 1500px;
+}
+#point_1{
+  width: 400px;
+  height: 250px;
+  margin: 20px;
+  background-color: white;
+
+}
+
+#point_2{
+  width: 400px;
+  height: 250px;
+  margin: 20px;
+  background-color: white;
+  
+}
+#point_3{
+  width: 400px;
+  height: 250px;
+  margin: 20px;
+  background-color: white;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+h1{
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: bold;
+  margin: 10px;
+  padding-top: 10px;
+}
+h2{
+  font-family: sans-serif;
+  font-size: small;
+  margin: 10px;
+}
+h3{
+  font-family: sans-serif;
+  font-size: 30px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+h4{
+  font-family: sans-serif;
+  font-size: 40px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+h5{
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 5px;
+}
+h6{
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 5px;
+}
+
+#Kong_Fu_Friendly{
+  background: url(Friendly.jpg);
+  height: 210px;
+  width: 380px;
+  margin: 10px;
+  /* extended code */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+#Kong_Fu_Delicious{
+  background: url(Delicious.jpg);
+  height: 210px;
+  width: 380px;
+  margin: 10px;
+  
+  /* extended code */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+#Kong_Fu_Reasonable{
+  background: url(Price.jpg);
+  height: 210px;
+  width: 380px;
+  margin: 10px;
+  /* extended code */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+#point{
+  background-color: white;
+
+  border-radius: 5px;
+  height: 40px;
+
+}
+
+#face_1{
+  background: url(face_1.jpg);
+  height: 40vh;
+  width: 40vh;
+  margin: 10px;
+  /* extended code */
+  background-size: 180%;
+  background-repeat: no-repeat;
+  background-position: right center;;
+  border-radius: 50%;
+}
+#face_2{
+  background: url(family_gathering.jpg);
+  height: 40vh;
+  width: 40vh;
+  margin: 10px;
+  /* extended code */
+  background-size: 180%;
+  background-repeat: no-repeat;
+  background-position: right center;;
+  border-radius: 50%;
+}
+@keyframes scroll {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+#buttom_part_home{
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 1500px;
+  background-color: #d8e6e6;
+  
+}
+
+#proof_bottom{
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  margin-top: 200px;
+  margin-left: 30px;
+  padding-left: 100px;
+  width: 1500px;
+  border-radius: 20px;
+ 
+}
+
+#face_letter{
+  width: 800px;
+  padding-left: 100px;
+}
+
+#bottom{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: #d8e6e6;
+  padding-top: 200px;
+}
+#bottom_box{
+  background-color: white;
+  width: 1300px;
+  height: 250px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  justify-content: center;
+  align-items: center;
+ 
+}
+#bottom_left{
+  padding-top: 10px;
+  padding-left: 20px;
+  
+}
+
+
+#social_media_2{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 100px;
+  background-color: #c3ceee;
+  height: 250px;
+  border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/*Menu Section*/
+
+#menuPage{
+  background-color: #d8e6e6;
+  padding-top: 100px;
+  height: 2000px;
+}
+
+div #menu-section{
+  display: grid;
+  grid-template-rows: 0.5fr 4fr;
+  padding: 3vh 3vw;
+  justify-content: center;
+}
+
+div#menu-title {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 2rem;
+ 
+}
+
+div#menu-title h3{
+  color: #FB410D;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+div#menu-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 80vw;
+  height: 80vw;
+}
+
+div.dish{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: white;
+  align-items: center;
+  padding: 5rem;
+  margin: 5rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+
+div.dish img{
+  width: 10vw;
+  padding-right: 1rem;
+}
+
+div.dish h4{
+  font-size: 1.25rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+div.dish h5{
+  font-size: 1.25rem;
+  color: #FB410D;
+  margin: 0px;
+  justify-self: center;
+}
+div.dish p{
+  margin: 0px;
+  font-size: 0.9rem;
+  color: gray;
+  padding-top: 1vh;
+}
+
+div #dish-details{
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+#image_food{
+  height: 150px;
+  width: 200px;
+  border-radius: 20px;
+  margin-right: 40px;
+}
+
+
+/*About Style*/
+#aboutPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  height: 1400px;
+  background-color: #d8e6e6;
+}
+#item_location{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #92a9ec;
+  border-radius: 20px;
+ 
+}
+#our_location{
+  padding-bottom:50px;
+  padding-top: 20px;
+}
+
+#point_about{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#location{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 50px;
+}
+#location_1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 5fr 1fr;
+  border: solid 1px #0443f1 ;
+  transition: transform .2s; /* Animation */
+  height: 450px;
+  width: 400px;
+  opacity: 0.8;
+  background-color: #afeceee3;
+  border-radius: 20px;
+ }
+
+ #location_1:hover{
+  transform: scale(1.01);
+  opacity: 1;
+  background-color: #ffffffe3;
+}
+
+#Kong_Fu_Vensreng{
+  height: 300px;
+  width: 300px;
+  margin: 5px;
+  background: url(Kong_Fo_Veng_Sreng.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  
+}
+
+
+#location_2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #0443f1 ;
+  transition: transform .2s; /* Animation */
+  height: 450px;
+  width: 400px;
+  opacity: 0.8;
+  background-color: #a6e8ebe3;
+  border-radius: 20px;
+ }
+
+ #location_2:hover{
+  transform: scale(1.01);
+  opacity: 1;
+  background-color: #ffffffe3;
+}
+
+#Kong_Fu_Midtown{
+  height: 300px;
+  width: 300px;
+  margin: 5px;
+  background: url(Kong_Fo_Midtown.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  
+}
+
+#location_3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #0443f1 ;
+  transition: transform .2s; /* Animation */
+  height: 450px;
+  width: 400px;
+  opacity: 0.8;
+  background-color: #68e9eee3;
+  border-radius: 20px;
+ }
+
+ #location_3:hover{
+  transform: scale(1.01);
+  opacity: 1;
+  background-color: #ffffffe3;
+}
+
+#Kong_Fu_Malin_Office{
+  height: 300px;
+  width: 300px;
+  margin: 5px;
+  background: url(Kong_Fo_Maline_Office.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  
+}
+
+
+#location_4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #0443f1 ;
+  transition: transform .2s; /* Animation */
+  height: 450px;
+  width: 400px;
+  opacity: 0.8;
+  background-color: #2ce6ece3;
+  border-radius: 20px;
+ }
+
+ #location_4:hover{
+  transform: scale(1.01);
+  opacity: 1;
+  background-color: #ffffffe3;
+}
+
+#Kong_Fu_Kmall{
+  height: 300px;
+  width: 300px;
+  margin: 5px;
+  background: url(Kong_Fo_Kmall.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  
+}
+
+@media (max-width: 900px){
+  
+
   #navbar{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     justify-content: center;
     align-items: center;
-    height: 120px;
-    padding-right: 40px;
+    height: 110px;
+    padding-right: 20px;
     opacity: 1;
     background-color: #d8e6e6;
+    width: 900px;
   }
 
   .container-fluid{
@@ -16,7 +639,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+    width: 300px;
   }
   #button_nav{
     opacity: 0.8;
@@ -24,35 +647,38 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 600px;
   
   }
   #button_nav:hover{
     opacity: 0.8;
+   
   }
   .container-fluid{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 300px;
   }
   #Kong_Fu_Logo{
     background: url(kong_fo_log.jpg);
-    height: 80px;
-    width: 300px;
+    height: 60px;
+    width: 200px;
     /* extended code */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 5px;
   }
- 
+
   button{
-    height: 60px;
-    width: 200px;
+    height: 50px;
+    width: 140px;
     background-color: whitesmoke;
     border: 1px solid black;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: black;
   }
@@ -62,15 +688,10 @@
     transform: scale(1.1); 
   }
 
-  #homePage{
-    width: 1600px;
-    background-color: #c3ceee;
-  }
-
   #movable_background {
     background-color: white;
     height: 800px;
-    width: 1600px;
+    width: 950px;
     position: relative;
     z-index: 1;
     display: flex;
@@ -89,13 +710,15 @@
     opacity: 1;
     background-size: 100% 100%;
     background-attachment: fixed;
+    
   }
 
   #content{
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1500px;
+  
   }
 
 
@@ -103,14 +726,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 30px; 
+    padding: 30px 30px; 
     background: #f5f5f5; 
-    font-size: 35px; 
+    font-size: 28px; 
     font-family: monospace; 
-    border-radius: 50px; 
+    border-radius: 40px; 
     overflow: hidden; 
     position: relative; 
-   
+    width: 500px;
 
   }
 
@@ -121,7 +744,7 @@
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0); 
     animation:  
     typing 2s steps(22, end) forwards, blink 1s 5s; 
-   
+  
   } 
 
   @keyframes typing { 
@@ -146,36 +769,44 @@
       } 
   } 
 
+  
+  #homePage{
+    width: 950px;
+    background-color: #d8e6e6;
+  }
+
   #div_point{
     animation: scroll linear;
     animation-timeline: view();
-    animation-range: entry 0 cover 20%;
+    animation-range: entry 0 cover 30%;
     display: flex;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    gap: 25px;
     background-color: #d8e6e6;
-    width: 1500px;
+    width: 900px;
   }
   #point_1{
-    width: 400px;
+    width: 220px;
     height: 250px;
-    margin: 20px;
+    margin: 15px;
     background-color: white;
- 
+
   }
 
   #point_2{
-    width: 400px;
+    width: 220px;
     height: 250px;
-    margin: 20px;
+   
     background-color: white;
     
   }
   #point_3{
-    width: 400px;
+    width: 220px;
     height: 250px;
-    margin: 20px;
+    margin: 15px;
     background-color: white;
   }
 
@@ -186,7 +817,6 @@
     font-family: sans-serif;
     font-size: large;
     font-weight: bold;
-    margin: 10px;
     padding-top: 10px;
   }
   h2{
@@ -196,15 +826,15 @@
   }
   h3{
     font-family: sans-serif;
-    font-size: 30px;
-    margin: 5px;
+    font-size: 20px;
     font-weight: bold;
+
   }
 
   h4{
     font-family: sans-serif;
-    font-size: 40px;
-    margin-top: 50px;
+    font-size: 30px;
+    margin-top: 10px;
     font-weight: bold;
   }
   h5{
@@ -221,8 +851,7 @@
   #Kong_Fu_Friendly{
     background: url(Friendly.jpg);
     height: 210px;
-    width: 380px;
-    margin: 10px;
+    width: 200px;
     /* extended code */
     background-size: cover;
     background-repeat: no-repeat;
@@ -233,8 +862,7 @@
   #Kong_Fu_Delicious{
     background: url(Delicious.jpg);
     height: 210px;
-    width: 380px;
-    margin: 10px;
+    width: 200px;
     
     /* extended code */
     background-size: cover;
@@ -245,8 +873,7 @@
   #Kong_Fu_Reasonable{
     background: url(Price.jpg);
     height: 210px;
-    width: 380px;
-    margin: 10px;
+    width: 200px;
     /* extended code */
     background-size: cover;
     background-repeat: no-repeat;
@@ -255,17 +882,15 @@
   }
   #point{
     background-color: white;
-
     border-radius: 5px;
     height: 40px;
- 
+
   }
- 
+
   #face_1{
     background: url(face_1.jpg);
-    height: 40vh;
-    width: 40vh;
-    margin: 10px;
+    height: 30vh;
+    width: 30vh;
     /* extended code */
     background-size: 180%;
     background-repeat: no-repeat;
@@ -274,10 +899,9 @@
   }
   #face_2{
     background: url(family_gathering.jpg);
-    height: 40vh;
-    width: 40vh;
+    height: 30vh;
+    width: 30vh;
     margin: 10px;
-    /* extended code */
     background-size: 180%;
     background-repeat: no-repeat;
     background-position: right center;;
@@ -293,14 +917,14 @@
       scale: 1;
     }
   }
-
   #buttom_part_home{
   
     display: grid;
     grid-template-rows: 1fr 1fr;
-    height: 1500px;
+    height: 1600px;
+    width: 900px;
     background-color: #d8e6e6;
-    
+
   }
 
   #proof_bottom{
@@ -311,18 +935,13 @@
     grid-template-columns: 1fr 3fr;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
-    margin-top: 200px;
-    margin-left: 30px;
-    padding-left: 100px;
-    width: 1500px;
-    border-radius: 20px;
-   
+    width: 900px;
+    
   }
 
   #face_letter{
-    width: 800px;
-    padding-left: 100px;
+    width: 500px;
+    padding-left: 20px;
   }
 
   #bottom{
@@ -332,19 +951,19 @@
     justify-content: center;
     align-items: center;
     height: 500px;
+    width: 900px;
     background-color: #d8e6e6;
-    padding-top: 200px;
   }
   #bottom_box{
     background-color: white;
-    width: 1300px;
+    width: 800px;
     height: 250px;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 5fr 3fr;
     justify-content: center;
     align-items: center;
-   
+  
   }
   #bottom_left{
     padding-top: 10px;
@@ -362,7 +981,7 @@
     background-color: #c3ceee;
     height: 250px;
     border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   
@@ -370,14 +989,14 @@
 
   #menuPage{
     background-color: #d8e6e6;
-    padding-top: 100px;
-    height: 2000px;
+    padding-top: 150px;
+    height: 1700px;
+    width: 900px;
   }
 
   div #menu-section{
     display: grid;
     grid-template-rows: 0.5fr 4fr;
-    padding: 3vh 3vw;
     justify-content: center;
   }
 
@@ -385,19 +1004,18 @@
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 2rem;
-   
+  
   }
 
   div#menu-title h3{
     color: #FB410D;
-    font-size: 1rem;
-    text-transform: uppercase;
+    font-size: 3rem;
   }
 
   div#menu-list {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    width: 80vw;
+    width: 100vw;
     height: 80vw;
   }
 
@@ -413,12 +1031,13 @@
   }
 
   div.dish img{
-    width: 10vw;
-    padding-right: 1rem;
+    width: 15vw;
+    height: 15vw;
+    padding-right: 0rem;
   }
 
   div.dish h4{
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 0px;
     margin: 0px;
   }
@@ -442,8 +1061,8 @@
   }
 
   #image_food{
-    height: 150px;
-    width: 200px;
+    height: 100px;
+    width: 150px;
     border-radius: 20px;
     margin-right: 40px;
   }
@@ -452,12 +1071,9 @@
   /*About Style*/
   #aboutPage{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 150px;
-    padding-bottom: 50px;
-    height: 1400px;
+    padding-top: 1150px;
+    padding-bottom: -500px;
+    width: 900px;
     background-color: #d8e6e6;
   }
   #item_location{
@@ -465,28 +1081,28 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #92a9ec;
-    border-radius: 20px;
+    background-color: #d8e6e6;
+    height: 2200px;
+    width: 900px;
    
   }
   #our_location{
-    padding-bottom:50px;
-    padding-top: 20px;
+    padding-bottom:0px;
+    padding-top: 50px;
   }
- 
+
   #point_about{
     padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
+
   }
-  
+
   #location{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 100px;
@@ -501,13 +1117,13 @@
     border: solid 1px #0443f1 ;
     transition: transform .2s; /* Animation */
     height: 450px;
-    width: 400px;
+    width: 600px;
     opacity: 0.8;
     background-color: #afeceee3;
     border-radius: 20px;
-   }
+  }
 
-   #location_1:hover{
+  #location_1:hover{
     transform: scale(1.01);
     opacity: 1;
     background-color: #ffffffe3;
@@ -533,13 +1149,13 @@
     border: solid 1px #0443f1 ;
     transition: transform .2s; /* Animation */
     height: 450px;
-    width: 400px;
+    width: 600px;
     opacity: 0.8;
     background-color: #a6e8ebe3;
     border-radius: 20px;
-   }
+  }
 
-   #location_2:hover{
+  #location_2:hover{
     transform: scale(1.01);
     opacity: 1;
     background-color: #ffffffe3;
@@ -564,13 +1180,13 @@
     border: solid 1px #0443f1 ;
     transition: transform .2s; /* Animation */
     height: 450px;
-    width: 400px;
+    width: 600px;
     opacity: 0.8;
     background-color: #68e9eee3;
     border-radius: 20px;
-   }
+  }
 
-   #location_3:hover{
+  #location_3:hover{
     transform: scale(1.01);
     opacity: 1;
     background-color: #ffffffe3;
@@ -596,13 +1212,13 @@
     border: solid 1px #0443f1 ;
     transition: transform .2s; /* Animation */
     height: 450px;
-    width: 400px;
+    width: 600px;
     opacity: 0.8;
     background-color: #2ce6ece3;
     border-radius: 20px;
-   }
+  }
 
-   #location_4:hover{
+  #location_4:hover{
     transform: scale(1.01);
     opacity: 1;
     background-color: #ffffffe3;
@@ -619,1222 +1235,606 @@
     
   }
 
-  @media (max-width: 900px){
-    
+}
+
+@media (max-width: 600px){
   
-    #navbar{
-      display: grid;
-      grid-template-columns: 4fr 1fr;
-      justify-content: center;
-      align-items: center;
-      height: 110px;
-      padding-right: 20px;
-      opacity: 1;
-      background-color: #d8e6e6;
-      width: 900px;
-    }
-
-    .container-fluid{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 300px;
-    }
-    #button_nav{
-      opacity: 0.8;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 600px;
-    
-    }
-    #button_nav:hover{
-      opacity: 0.8;
-     
-    }
-    .container-fluid{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 300px;
-    }
-    #Kong_Fu_Logo{
-      background: url(kong_fo_log.jpg);
-      height: 60px;
-      width: 200px;
-      /* extended code */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 5px;
-    }
+  #navbar{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 600px;
+    opacity: 1;
+    background-color: #d8e6e6;
   
-    button{
-      height: 50px;
-      width: 140px;
-      background-color: whitesmoke;
-      border: 1px solid black;
-      border-radius: 5px;
-      font-size: 18px;
-      font-weight: bold;
-      color: black;
-    }
-    button:hover{
-      background-color: #0443f1;
-      color: white;
-      transform: scale(1.1); 
-    }
+  }
 
-    #movable_background {
-      background-color: white;
-      height: 800px;
-      width: 950px;
-      position: relative;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    #movable_background:before{
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: url(kong_kitchen_background.jpg) center center;
-      opacity: 1;
-      background-size: 100% 100%;
-      background-attachment: fixed;
-      
-    }
-
-    #content{
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    
-    }
-
-
-    #text_content{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 30px 30px; 
-      background: #f5f5f5; 
-      font-size: 28px; 
-      font-family: monospace; 
-      border-radius: 40px; 
-      overflow: hidden; 
-      position: relative; 
-      width: 500px;
-
-    }
-
-    #text_content p { 
-      
-      margin: 0px; 
-      white-space: nowrap; 
-      clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0); 
-      animation:  
-      typing 2s steps(22, end) forwards, blink 1s 5s; 
-    
-    } 
-
-    @keyframes typing { 
-        0% { 
-            width: 0% 
-        } 
-
-        100% { 
-            width: 100% 
-        } 
-    } 
-
-    @keyframes blink { 
-
-        0%, 
-        100% { 
-            border-right: 2px solid transparent; 
-        } 
-
-        50% { 
-            border-right: 2px solid #222; 
-        } 
-    } 
-
-    
-    #homePage{
-      width: 950px;
-      background-color: #d8e6e6;
-    }
-
-    #div_point{
-      animation: scroll linear;
-      animation-timeline: view();
-      animation-range: entry 0 cover 30%;
-      display: flex;
-      grid-template-columns: 1fr 1fr 1fr;
-      justify-content: center;
-      align-items: flex-start;
-      padding-top: 50px;
-      gap: 25px;
-      background-color: #d8e6e6;
-      width: 900px;
-    }
-    #point_1{
-      width: 220px;
-      height: 250px;
-      margin: 15px;
-      background-color: white;
+  .container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+  }
+  #button_nav{
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
   
-    }
+  }
+  #button_nav:hover{
+    opacity: 0.8;
+   
+  }
+  .container-fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  #Kong_Fu_Logo{
+    background: url(kong_fo_log.jpg);
+    height: 50px;
+    width: 120px;
+    /* extended code */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+  }
 
-    #point_2{
-      width: 220px;
-      height: 250px;
-     
-      background-color: white;
-      
-    }
-    #point_3{
-      width: 220px;
-      height: 250px;
-      margin: 15px;
-      background-color: white;
-    }
+  button{
+    height: 40px;
+    width: 80px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+  }
+  button:hover{
+    background-color: #0443f1;
+    color: white;
+    transform: scale(1.1); 
+  }
 
-    .no-scroll {
-      overflow: hidden;
-    }
-    h1{
-      font-family: sans-serif;
-      font-size: large;
-      font-weight: bold;
-      padding-top: 10px;
-    }
-    h2{
-      font-family: sans-serif;
-      font-size: small;
-      margin: 10px;
-    }
-    h3{
-      font-family: sans-serif;
-      font-size: 20px;
-      font-weight: bold;
+  #movable_background {
+    background-color: white;
+    height: 500px;
+    width: 650px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #movable_background:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(kong_kitchen_background.jpg) center center;
+    opacity: 1;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+  }
+
+  #content{
+    padding-top: 70px;
+    padding-right: 100px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
-    }
+  }
 
-    h4{
-      font-family: sans-serif;
-      font-size: 30px;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    h5{
-      font-family: sans-serif;
-      font-size: 20px;
-      margin: 5px;
-    }
-    h6{
-      font-family: sans-serif;
-      font-size: 15px;
-      margin: 5px;
-    }
 
-    #Kong_Fu_Friendly{
-      background: url(Friendly.jpg);
-      height: 210px;
-      width: 200px;
-      /* extended code */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 10px;
-    }
-
-    #Kong_Fu_Delicious{
-      background: url(Delicious.jpg);
-      height: 210px;
-      width: 200px;
-      
-      /* extended code */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 10px;
-    }
-    #Kong_Fu_Reasonable{
-      background: url(Price.jpg);
-      height: 210px;
-      width: 200px;
-      /* extended code */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 10px;
-    }
-    #point{
-      background-color: white;
-      border-radius: 5px;
-      height: 40px;
-  
-    }
-  
-    #face_1{
-      background: url(face_1.jpg);
-      height: 30vh;
-      width: 30vh;
-      /* extended code */
-      background-size: 180%;
-      background-repeat: no-repeat;
-      background-position: right center;;
-      border-radius: 50%;
-    }
-    #face_2{
-      background: url(family_gathering.jpg);
-      height: 30vh;
-      width: 30vh;
-      margin: 10px;
-      background-size: 180%;
-      background-repeat: no-repeat;
-      background-position: right center;;
-      border-radius: 50%;
-    }
-    @keyframes scroll {
-      from{
-        opacity: 0;
-        scale: 0.5;
-      }
-      to{
-        opacity: 1;
-        scale: 1;
-      }
-    }
-    #buttom_part_home{
+  #text_content{
     
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      height: 1600px;
-      width: 900px;
-      background-color: #d8e6e6;
-
-    }
-
-    #proof_bottom{
-      animation: scroll linear;
-      animation-timeline: view();
-      animation-range: entry 0 cover 20%;
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      justify-content: center;
-      align-items: center;
-      width: 900px;
-      
-    }
-
-    #face_letter{
-      width: 500px;
-      padding-left: 20px;
-    }
-
-    #bottom{
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 500px;
-      width: 900px;
-      background-color: #d8e6e6;
-    }
-    #bottom_box{
-      background-color: white;
-      width: 800px;
-      height: 250px;
-      border-radius: 20px;
-      display: grid;
-      grid-template-columns: 5fr 3fr;
-      justify-content: center;
-      align-items: center;
-    
-    }
-    #bottom_left{
-      padding-top: 10px;
-      padding-left: 20px;
-      
-    }
-    
-
-    #social_media_2{
-      font-size: 50px;
-      display: flex;
-      justify-content: center;
-      align-items:center;
-      gap: 100px;
-      background-color: #c3ceee;
-      height: 250px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-    }
-
-    
-    /*Menu Section*/
-
-    #menuPage{
-      background-color: #d8e6e6;
-      padding-top: 150px;
-      height: 1700px;
-      width: 900px;
-    }
-
-    div #menu-section{
-      display: grid;
-      grid-template-rows: 0.5fr 4fr;
-      justify-content: center;
-    }
-
-    div#menu-title {
-      text-transform: uppercase;
-      text-align: center;
-      padding-bottom: 2rem;
-    
-    }
-
-    div#menu-title h3{
-      color: #FB410D;
-      font-size: 3rem;
-    }
-
-    div#menu-list {
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      width: 100vw;
-      height: 80vw;
-    }
-
-    div.dish{
-      display: grid;
-      grid-template-columns: 1fr 5fr;
-      background-color: white;
-      align-items: center;
-      padding: 5rem;
-      margin: 5rem;
-      margin-bottom: 1rem;
-      border-radius: 20px;
-    }
-
-    div.dish img{
-      width: 15vw;
-      height: 15vw;
-      padding-right: 0rem;
-    }
-
-    div.dish h4{
-      font-size: 1rem;
-      padding: 0px;
-      margin: 0px;
-    }
-
-    div.dish h5{
-      font-size: 1.25rem;
-      color: #FB410D;
-      margin: 0px;
-      justify-self: center;
-    }
-    div.dish p{
-      margin: 0px;
-      font-size: 0.9rem;
-      color: gray;
-      padding-top: 1vh;
-    }
-
-    div #dish-details{
-      display: grid;
-      grid-template-columns: 5fr 1fr;
-    }
-
-    #image_food{
-      height: 100px;
-      width: 150px;
-      border-radius: 20px;
-      margin-right: 40px;
-    }
-
-
-    /*About Style*/
-    #aboutPage{
-      display: flex;
-      padding-top: 1150px;
-      padding-bottom: -500px;
-      width: 900px;
-      background-color: #d8e6e6;
-    }
-    #item_location{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      background-color: #d8e6e6;
-      height: 2200px;
-      width: 900px;
-     
-    }
-    #our_location{
-      padding-bottom:0px;
-      padding-top: 50px;
-    }
-  
-    #point_about{
-      padding: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  
-    }
-
-    #location{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 100px;
-      padding: 50px;
-    }
-    #location_1{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      grid-template-columns: 5fr 1fr;
-      border: solid 1px #0443f1 ;
-      transition: transform .2s; /* Animation */
-      height: 450px;
-      width: 600px;
-      opacity: 0.8;
-      background-color: #afeceee3;
-      border-radius: 20px;
-    }
-
-    #location_1:hover{
-      transform: scale(1.01);
-      opacity: 1;
-      background-color: #ffffffe3;
-    }
-
-    #Kong_Fu_Vensreng{
-      height: 300px;
-      width: 300px;
-      margin: 5px;
-      background: url(Kong_Fo_Veng_Sreng.jpg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      border-radius: 20px;
-      
-    }
-
-
-    #location_2{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #0443f1 ;
-      transition: transform .2s; /* Animation */
-      height: 450px;
-      width: 600px;
-      opacity: 0.8;
-      background-color: #a6e8ebe3;
-      border-radius: 20px;
-    }
-
-    #location_2:hover{
-      transform: scale(1.01);
-      opacity: 1;
-      background-color: #ffffffe3;
-    }
-
-    #Kong_Fu_Midtown{
-      height: 300px;
-      width: 300px;
-      margin: 5px;
-      background: url(Kong_Fo_Midtown.jpg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      border-radius: 20px;
-      
-    }
-
-    #location_3{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #0443f1 ;
-      transition: transform .2s; /* Animation */
-      height: 450px;
-      width: 600px;
-      opacity: 0.8;
-      background-color: #68e9eee3;
-      border-radius: 20px;
-    }
-
-    #location_3:hover{
-      transform: scale(1.01);
-      opacity: 1;
-      background-color: #ffffffe3;
-    }
-
-    #Kong_Fu_Malin_Office{
-      height: 300px;
-      width: 300px;
-      margin: 5px;
-      background: url(Kong_Fo_Maline_Office.jpg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      border-radius: 20px;
-      
-    }
-
-    
-    #location_4{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #0443f1 ;
-      transition: transform .2s; /* Animation */
-      height: 450px;
-      width: 600px;
-      opacity: 0.8;
-      background-color: #2ce6ece3;
-      border-radius: 20px;
-    }
-
-    #location_4:hover{
-      transform: scale(1.01);
-      opacity: 1;
-      background-color: #ffffffe3;
-    }
-
-    #Kong_Fu_Kmall{
-      height: 300px;
-      width: 300px;
-      margin: 5px;
-      background: url(Kong_Fo_Kmall.jpeg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      border-radius: 20px;
-      
-    }
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px; 
+    background: #f5f5f5; 
+    font-size: 20px; 
+    font-family: monospace; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    width: 370px;
 
   }
 
-  @media (max-width: 600px){
+  #text_content p { 
     
-    #navbar{
-      display: grid;
-      grid-template-columns: 4fr 1fr;
-      justify-content: center;
-      align-items: center;
-      height: 80px;
-      width: 600px;
-      opacity: 1;
-      background-color: #d8e6e6;
-    
-    }
-
-    .container-fluid{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100px;
-    }
-    #button_nav{
-      opacity: 0.8;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 450px;
-    
-    }
-    #button_nav:hover{
-      opacity: 0.8;
-     
-    }
-    .container-fluid{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-     
-    }
-    #Kong_Fu_Logo{
-      background: url(kong_fo_log.jpg);
-      height: 50px;
-      width: 120px;
-      /* extended code */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 5px;
-    }
+    margin: 0px; 
+    white-space: nowrap; 
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0); 
+    animation:  
+    typing 2s steps(22, end) forwards, blink 1s 5s; 
   
-    button{
-      height: 40px;
-      width: 80px;
-      background-color: whitesmoke;
-      border: 1px solid black;
-      border-radius: 5px;
-      font-size: 15px;
-      font-weight: bold;
-      color: black;
-    }
-    button:hover{
-      background-color: #0443f1;
-      color: white;
-      transform: scale(1.1); 
-    }
+  } 
 
-    #movable_background {
-      background-color: white;
-      height: 500px;
-      width: 650px;
-      position: relative;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  @keyframes typing { 
+      0% { 
+          width: 0% 
+      } 
+
+      100% { 
+          width: 100% 
+      } 
+  } 
+
+  @keyframes blink { 
+
+      0%, 
+      100% { 
+          border-right: 2px solid transparent; 
+      } 
+
+      50% { 
+          border-right: 2px solid #222; 
+      } 
+  } 
+  #homePage{
+    width: 650px;
+    background-color: #d8e6e6;
+  }
+
+  #div_point{
+    display: flex;;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-left: 100px;
+    background-color: #d8e6e6;
+    width: 450px;
+  }
+  #point_1{
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    width: 500px;
+    height: 250px;
+    margin: 15px;
+    background-color: white;
+
+  }
+
+  #point_2{
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    width: 500px;
+    height: 250px;
+    margin: 15px;
+    background-color: white;
+    
+  }
+  #point_3{
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    width: 500px;
+    height: 250px;
+    margin: 15px;
+    background-color: white;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+  h1{
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  h2{
+    font-family: sans-serif;
+    font-size: small;
+    margin: 10px;
+  }
+  h3{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+  }
+
+  h4{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  h5{
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 5px;
+  }
+  h6{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 5px;
+  }
+
+  #Kong_Fu_Friendly{
+    background: url(Friendly.jpg);
+    height: 210px;
+    width: 480px;
+    /* extended code */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+  }
+
+  #Kong_Fu_Delicious{
+    background: url(Delicious.jpg);
+    height: 210px;
+    width: 480px;
+    
+    /* extended code */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+  }
+  #Kong_Fu_Reasonable{
+    background: url(Price.jpg);
+    height: 210px;
+    width: 480px;
+    /* extended code */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+  }
+  #point{
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #face_1{
+    background: url(face_1.jpg);
+    height: 30vh;
+    width: 30vh;
+    /* extended code */
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-position: right center;;
+    border-radius: 50%;
+  }
+  #face_2{
+    background: url(family_gathering.jpg);
+    height: 30vh;
+    width: 30vh;
+    margin: 10px;
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-position: right center;;
+    border-radius: 50%;
+  }
+  @keyframes scroll {
+    from{
+      opacity: 0;
+      scale: 0.5;
     }
-    #movable_background:before{
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: url(kong_kitchen_background.jpg) center center;
+    to{
       opacity: 1;
-      background-size: 100% 100%;
-      background-attachment: fixed;
-      
+      scale: 1;
     }
-
-    #content{
-      padding-top: 70px;
-      padding-right: 100px;
-      height: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    
-    }
-
-
-    #text_content{
-      
-      position: relative; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 15px 20px; 
-      background: #f5f5f5; 
-      font-size: 20px; 
-      font-family: monospace; 
-      border-radius: 20px; 
-      overflow: hidden; 
-      width: 370px;
-
-    }
-
-    #text_content p { 
-      
-      margin: 0px; 
-      white-space: nowrap; 
-      clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0); 
-      animation:  
-      typing 2s steps(22, end) forwards, blink 1s 5s; 
-    
-    } 
-
-    @keyframes typing { 
-        0% { 
-            width: 0% 
-        } 
-
-        100% { 
-            width: 100% 
-        } 
-    } 
-
-    @keyframes blink { 
-
-        0%, 
-        100% { 
-            border-right: 2px solid transparent; 
-        } 
-
-        50% { 
-            border-right: 2px solid #222; 
-        } 
-    } 
-    #homePage{
-      width: 650px;
-      background-color: #d8e6e6;
-    }
-
-    #div_point{
-      display: flex;;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 50px;
-      padding-left: 100px;
-      background-color: #d8e6e6;
-      width: 450px;
-    }
-    #point_1{
-      animation: scroll linear;
-      animation-timeline: view();
-      animation-range: entry 0 cover 30%;
-      width: 500px;
-      height: 250px;
-      margin: 15px;
-      background-color: white;
+  }
+  #buttom_part_home{
   
-    }
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 2000px;
+    width: 600px;
+    background-color: #d8e6e6;
 
-    #point_2{
-      animation: scroll linear;
-      animation-timeline: view();
-      animation-range: entry 0 cover 30%;
-      width: 500px;
-      height: 250px;
-      margin: 15px;
-      background-color: white;
-      
-    }
-    #point_3{
-      animation: scroll linear;
-      animation-timeline: view();
-      animation-range: entry 0 cover 30%;
-      width: 500px;
-      height: 250px;
-      margin: 15px;
-      background-color: white;
-    }
+  }
 
-    .no-scroll {
-      overflow: hidden;
-    }
-    h1{
-      font-family: sans-serif;
-      font-size: large;
-      font-weight: bold;
-      padding-top: 10px;
-    }
-    h2{
-      font-family: sans-serif;
-      font-size: small;
-      margin: 10px;
-    }
-    h3{
-      font-family: sans-serif;
-      font-size: 15px;
-      font-weight: bold;
+  #proof_bottom{
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding-right: 220px;
+    gap: 20px
+    
+  }
+
+  #face_letter{
+    width: 450px;
+    padding-left: 20px;
+  }
+
+  #bottom{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 600px;
+    padding-right: 50px;
+    background-color: #d8e6e6;
+  }
+  #bottom_box{
+    background-color: white;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    justify-content: center;
+    align-items: center;
   
-    }
+  }
+  #bottom_left{
+    padding-top: 10px;
+    padding-left: 20px;
+    
+  }
 
-    h4{
-      font-family: sans-serif;
-      font-size: 20px;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    h5{
-      font-family: sans-serif;
-      font-size: 12px;
-      margin: 5px;
-    }
-    h6{
-      font-family: sans-serif;
-      font-size: 15px;
-      margin: 5px;
-    }
 
-    #Kong_Fu_Friendly{
-      background: url(Friendly.jpg);
-      height: 210px;
-      width: 480px;
-      /* extended code */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 10px;
-    }
+  #social_media_2{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 50px;
+    height: 250px;
+    background-color: #c3ceee;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 
-    #Kong_Fu_Delicious{
-      background: url(Delicious.jpg);
-      height: 210px;
-      width: 480px;
-      
-      /* extended code */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 10px;
-    }
-    #Kong_Fu_Reasonable{
-      background: url(Price.jpg);
-      height: 210px;
-      width: 480px;
-      /* extended code */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 10px;
-    }
-    #point{
-      background-color: white;
-      border-radius: 5px;
-      height: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
   
-    }
+  /*Menu Section*/
+
+  #menuPage{
+    background-color: #d8e6e6;
+    padding-top: 100px;
+    height: 1500px;
+    width: 600px;
+  }
+
+  div #menu-section{
+    display: grid;
+    grid-template-rows: 0.5fr 4fr;
+    padding: 1vw 1vw;
+    justify-content: center;
+  }
+
+  div#menu-title {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 2rem;
   
-    #face_1{
-      background: url(face_1.jpg);
-      height: 30vh;
-      width: 30vh;
-      /* extended code */
-      background-size: 180%;
-      background-repeat: no-repeat;
-      background-position: right center;;
-      border-radius: 50%;
-    }
-    #face_2{
-      background: url(family_gathering.jpg);
-      height: 30vh;
-      width: 30vh;
-      margin: 10px;
-      background-size: 180%;
-      background-repeat: no-repeat;
-      background-position: right center;;
-      border-radius: 50%;
-    }
-    @keyframes scroll {
-      from{
-        opacity: 0;
-        scale: 0.5;
-      }
-      to{
-        opacity: 1;
-        scale: 1;
-      }
-    }
-    #buttom_part_home{
+  }
+
+  div#menu-title h3{
+    color: #FB410D;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  div#menu-list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: 50vw;
+  }
+
+  div.dish{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    background-color: white;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  #image_food{
+    height: 70px;
+    width: 90px;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+
+  /*About Style*/
+  #aboutPage{
+    display: flex;
+    padding-top: 500px;
+    padding-bottom: 0px;
+    width: 600px;
+    background-color: #d8e6e6;
+  }
+  #item_location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8e6e6;
+    width: 600px;
+  
+  }
+  #our_location{
+    padding-bottom:0px;
+    padding-top: 50px;
+  }
+  a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #point_about{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+  }
+  #location_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 5fr 1fr;
+    border: solid 1px #0443f1 ;
+    transition: transform .2s; /* Animation */
+    height: 350px;
+    width: 400px;
+    opacity: 0.8;
+    background-color: #afeceee3;
+    border-radius: 20px;
+  }
+
+  #location_1:hover{
+    transform: scale(1.01);
+    opacity: 1;
+    background-color: #ffffffe3;
+  }
+
+  #Kong_Fu_Vensreng{
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    background: url(Kong_Fo_Veng_Sreng.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
     
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      height: 2000px;
-      width: 600px;
-      background-color: #d8e6e6;
+  }
 
-    }
 
-    #proof_bottom{
-      animation: scroll linear;
-      animation-timeline: view();
-      animation-range: entry 0 cover 30%;
-      display: flex;
-      flex-direction: column;
-      width: 600px;
-      padding-right: 220px;
-      gap: 20px
-      
-    }
+  #location_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #0443f1 ;
+    transition: transform .2s; /* Animation */
+    height: 350px;
+    width: 400px;
+    opacity: 0.8;
+    background-color: #a6e8ebe3;
+    border-radius: 20px;
+  }
 
-    #face_letter{
-      width: 450px;
-      padding-left: 20px;
-    }
+  #location_2:hover{
+    transform: scale(1.01);
+    opacity: 1;
+    background-color: #ffffffe3;
+  }
 
-    #bottom{
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 500px;
-      width: 600px;
-      padding-right: 50px;
-      background-color: #d8e6e6;
-    }
-    #bottom_box{
-      background-color: white;
-      width: 500px;
-      height: 250px;
-      border-radius: 20px;
-      display: grid;
-      grid-template-columns: 6fr 3fr;
-      justify-content: center;
-      align-items: center;
+  #Kong_Fu_Midtown{
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    background: url(Kong_Fo_Midtown.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
     
-    }
-    #bottom_left{
-      padding-top: 10px;
-      padding-left: 20px;
-      
-    }
+  }
 
+  #location_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #0443f1 ;
+    transition: transform .2s; /* Animation */
+    height: 350px;
+    width: 400px;
+    opacity: 0.8;
+    background-color: #68e9eee3;
+    border-radius: 20px;
+  }
 
-    #social_media_2{
-      font-size: 40px;
-      display: flex;
-      justify-content: center;
-      align-items:center;
-      gap: 50px;
-      height: 250px;
-      background-color: #c3ceee;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-    }
+  #location_3:hover{
+    transform: scale(1.01);
+    opacity: 1;
+    background-color: #ffffffe3;
+  }
 
+  #Kong_Fu_Malin_Office{
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    background: url(Kong_Fo_Maline_Office.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
     
-    /*Menu Section*/
+  }
 
-    #menuPage{
-      background-color: #d8e6e6;
-      padding-top: 100px;
-      height: 1500px;
-      width: 600px;
-    }
 
-    div #menu-section{
-      display: grid;
-      grid-template-rows: 0.5fr 4fr;
-      padding: 1vw 1vw;
-      justify-content: center;
-    }
+  #location_4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #0443f1 ;
+    transition: transform .2s; /* Animation */
+    height: 350px;
+    width: 400px;
+    opacity: 0.8;
+    background-color: #2ce6ece3;
+    border-radius: 20px;
+  }
 
-    div#menu-title {
-      text-transform: uppercase;
-      text-align: center;
-      padding-bottom: 2rem;
+  #location_4:hover{
+    transform: scale(1.01);
+    opacity: 1;
+    background-color: #ffffffe3;
+  }
+
+  #Kong_Fu_Kmall{
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    background: url(Kong_Fo_Kmall.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
     
-    }
-
-    div#menu-title h3{
-      color: #FB410D;
-      font-size: 1rem;
-      text-transform: uppercase;
-    }
-
-    div#menu-list {
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      width: 100vw;
-      height: 50vw;
-    }
-
-    div.dish{
-      display: grid;
-      grid-template-columns: 1fr 6fr;
-      background-color: white;
-      align-items: center;
-      border-radius: 20px;
-    }
-
-    #image_food{
-      height: 70px;
-      width: 90px;
-      border-radius: 20px;
-      margin-right: 20px;
-    }
-
-    /*About Style*/
-    #aboutPage{
-      display: flex;
-      padding-top: 500px;
-      padding-bottom: 0px;
-      width: 600px;
-      background-color: #d8e6e6;
-    }
-    #item_location{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      background-color: #d8e6e6;
-      width: 600px;
-    
-    }
-    #our_location{
-      padding-bottom:0px;
-      padding-top: 50px;
-    }
-    a{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #point_about{
-      padding: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-    }
-
-    #location{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 50px;
-      padding: 50px;
-    }
-    #location_1{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      grid-template-columns: 5fr 1fr;
-      border: solid 1px #0443f1 ;
-      transition: transform .2s; /* Animation */
-      height: 350px;
-      width: 400px;
-      opacity: 0.8;
-      background-color: #afeceee3;
-      border-radius: 20px;
-    }
-
-    #location_1:hover{
-      transform: scale(1.01);
-      opacity: 1;
-      background-color: #ffffffe3;
-    }
-
-    #Kong_Fu_Vensreng{
-      height: 200px;
-      width: 200px;
-      margin: 5px;
-      background: url(Kong_Fo_Veng_Sreng.jpg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      border-radius: 20px;
-      
-    }
-
-
-    #location_2{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #0443f1 ;
-      transition: transform .2s; /* Animation */
-      height: 350px;
-      width: 400px;
-      opacity: 0.8;
-      background-color: #a6e8ebe3;
-      border-radius: 20px;
-    }
-
-    #location_2:hover{
-      transform: scale(1.01);
-      opacity: 1;
-      background-color: #ffffffe3;
-    }
-
-    #Kong_Fu_Midtown{
-      height: 200px;
-      width: 200px;
-      margin: 5px;
-      background: url(Kong_Fo_Midtown.jpg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      border-radius: 20px;
-      
-    }
-
-    #location_3{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #0443f1 ;
-      transition: transform .2s; /* Animation */
-      height: 350px;
-      width: 400px;
-      opacity: 0.8;
-      background-color: #68e9eee3;
-      border-radius: 20px;
-    }
-
-    #location_3:hover{
-      transform: scale(1.01);
-      opacity: 1;
-      background-color: #ffffffe3;
-    }
-
-    #Kong_Fu_Malin_Office{
-      height: 200px;
-      width: 200px;
-      margin: 5px;
-      background: url(Kong_Fo_Maline_Office.jpg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      border-radius: 20px;
-      
-    }
-
-
-    #location_4{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #0443f1 ;
-      transition: transform .2s; /* Animation */
-      height: 350px;
-      width: 400px;
-      opacity: 0.8;
-      background-color: #2ce6ece3;
-      border-radius: 20px;
-    }
-
-    #location_4:hover{
-      transform: scale(1.01);
-      opacity: 1;
-      background-color: #ffffffe3;
-    }
-
-    #Kong_Fu_Kmall{
-      height: 200px;
-      width: 200px;
-      margin: 5px;
-      background: url(Kong_Fo_Kmall.jpeg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      border-radius: 20px;
-      
-    }
+  }
 
 }

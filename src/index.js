@@ -52,12 +52,14 @@ aboutBtn.addEventListener("click", function() {
     location_1.style.display = "flex";
     location_2.style.display = "block";
     location_2.style.display = "flex";
-    location_3.style.display = "none";
-    location_4.style.display = "none";
+    location_3.style.display = "flex";
+    location_3.style.display = "block";
+    location_4.style.display = "flex";
+    location_4.style.display = "block";
     
   
 
-    aboutPage();
+    //aboutPage();
     
 });
 

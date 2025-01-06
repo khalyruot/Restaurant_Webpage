@@ -74,7 +74,7 @@ export function menuPage(){
     const pizza2details = document.createElement('div');
     pizza2details.id = 'dish-details';
     const pizza2name = document.createElement('h3');
-    pizza2name.textContent = 'KUNG PAO CHICKEN'
+    pizza2name.textContent = 'Kung Pao Chicken'
     const pizza2price = document.createElement('h3');
     pizza2price.textContent = '$5';
     const pizza2ingredients = document.createElement('h6');
@@ -150,7 +150,7 @@ export function menuPage(){
     const pizza5details = document.createElement('div');
     pizza5details.id = 'dish-details';
     const pizza5name = document.createElement('h3');
-    pizza5name.textContent = 'GRILLED TERIYAKI CHICKEN'
+    pizza5name.textContent = 'Grilled Teriyaki Chicken'
     const pizza5price = document.createElement('h3');
     pizza5price.textContent = '$8';
     const pizza5ingredients = document.createElement('h6');
